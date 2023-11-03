@@ -9,6 +9,7 @@ public partial class Driver : BaseEntity
     public string Name { get; set; } = null!;
 
     public int Age { get; set; }
+    public int IdTeam {get; set;}
 
     public virtual ICollection<Team> Teams { get; set; } = new List<Team>();
 }
